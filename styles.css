@@ -9,12 +9,31 @@ footer{
     color:ghostwhite;
 }
 
+footer > a > img{
+    width: 120px;
+    height: 120px;   
+}
+
 /*===================ID STYLES=========================*/
 #NavMenu{
+    align-content: center;
     background-color: maroon;
     color: ghostwhite;
     margin-top: 0%;
     padding:5px;
+    display: flex;
+}
+
+#NavMenu > a > h2{
+    background-color: rgba(168, 90, 90, 0.582);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#NavMenu > .vl {
+    width:2px;
+    height: 70%;
+    border: maroon;
 }
 
 #Header{
@@ -26,7 +45,7 @@ footer{
     height: 40%;
     border: 3px grey solid;
     background-color: lightgrey;
-    align-content: center;
+    text-align: center;
 }
 
 #HomeBtns{
@@ -36,6 +55,14 @@ footer{
     padding: 1%;
 
 }
+
+
+#ObjDisplay{
+    height: 300px;
+    width: 500px;
+    border: 3px maroon inset;
+}
+
 /*===================CLASS STYLES=========================*/
 
 .MainBtn{
@@ -55,4 +82,16 @@ footer{
 .vl {
     border-left: 3px solid grey;
     height: 50px;
+}
+
+.ObjTab{
+    height:20px;
+    width:100px;
+    border: 3px maroon inset;
+    
+}
+
+.HomeLogo{
+    height: 80px;
+    width: 80px;
 }
