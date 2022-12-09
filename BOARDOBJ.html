@@ -3,54 +3,48 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
         <title>Test Test Test</title>
     </head>
 
     <body>
 
         <div id="NavMenu">
-            <img class="HomeLogo" src="UAT_logo.jpg">
-            <div class="vl"></div>
-            <a href="index.html"><h2>Home</h2></a>
-            <div class="vl"></div>
-            <a href="UATSPACE.html"><h2>UAT Space</h2></a>
-            <div class="vl"></div>
-            <a href="BOARDOBJ.html"><h2>Boards Objectives</h2></a>
-            <div class="vl"></div>
-            <a href="SIP.html"><h2>SIP</h2></a>
+            <img class="HomeLogo" src="UAT_logo.png">
+            <div id="NavA">
+                <a href="index.html"><h2>Home</h2></a>
+                <div class="vl"></div>
+                <a href="UATSPACE.html"><h2>UAT Space</h2></a>
+                <div class="vl"></div>
+                <a href="BOARDOBJ.html"><h2>Boards Objectives</h2></a>
+                <div class="vl"></div>
+                <a href="SIP.html"><h2>SIP</h2></a>
+            </div>
         </div>
 
         <div id="Header">
             <hr>
             <h1>Board Objectives</h1>
-            <p>This is for the Board Objectives page</p>
             <hr>
         </div>
         
         <div id="Content">
             <h1>UAT Computer Science Program</h1>
-            <h2>- Objective -</h2>
-            <table style="display: flex;">
-                <td class="ObjTab"><h4>1</h4></li>
-                <td class="ObjTab"><h4>2</h4></li>
-                <td class="ObjTab"><h4>3</h4></li>
-                <td class="ObjTab"><h4>4</h4></li>
-                <td class="ObjTab"><h4>5</h4></li>
-                <td class="ObjTab"><h4>6</h4></li>
-            </table>
+            <h2>- Objectives -</h2>
+            <div id= "ObjEnv">
+                <table style="display: flex;">
+                    <td class="ObjTab" onmouseover="ObjSwap(1)" onmouseleave="defaultObjTxt()"><h2>1</h2></td>
+                    <td class="ObjTab" onmouseover="ObjSwap(2)" onmouseleave="defaultObjTxt()"><h2>2</h2></td>
+                    <td class="ObjTab" onmouseover="ObjSwap(3)" onmouseleave="defaultObjTxt()"><h2>3</h2></td>
+                    <td class="ObjTab" onmouseover="ObjSwap(4)" onmouseleave="defaultObjTxt()"><h2>4</h2></td>
+                    <td class="ObjTab" onmouseover="ObjSwap(5)" onmouseleave="defaultObjTxt()"><h2>5</h2></td>
+                    <td class="ObjTab" onmouseover="ObjSwap(6)" onmouseleave="defaultObjTxt()"><h2>6</h2></td>
+                </table>
 
-            <div id="ObjDisplay">
-                <h3 id="ObjTxt">This is where the Objective display will show when tab is hovered over.</h3>
-            </div>
-
-            <!--Follow a software development process to analyze a problem and to design, build and test software solutions.
-                Demonstrate software development skills using more than one programming language and development environment.
-                Implement data-driven solutions.
-                Design and implement software solutions for mobile devices, embedded systems and/or multiple platforms.
-                Document the planning and development of software applications using industry standard tools, techniques and processes.
-                Within software solutions describe, implement and analyze data structure techniques such as lists, trees, hash tables and graphs, along with sorting and searching algorithms.
-            -->
-                 
+                <div id="ObjDisplay">
+                    <h3 id="ObjTxt">Hover over the tabs to see each objective.</h3>
+                </div>
+            </div>       
             
         </div>
         
@@ -58,9 +52,11 @@
 
     <footer>
         <p>Page created by Lucas Foxworthy</p>
+        <p>Email: <a href="mailto: lucfoxwo@uat.edu">lucfoxwo@uat.edu</a></p>
         <hr>
         <h4>University of Advancing Technology</h4>
-        <a href="https://www.uat.edu/"><img class="NavLogo" src="UAT_logo.jpg"></a>
+        <a href="https://www.uat.edu/"><img class="NavLogo" src="UAT_logo.png"></a>
+        <p>Address: 2625 W Baseline Rd, Tempe, AZ 85283</p>
     </footer>
 
 </html>
