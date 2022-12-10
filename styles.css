@@ -12,25 +12,6 @@ table{
     padding: 20px;
 }
 
-td{
-    background-color: bisque;
-    height: 400px;
-    width: 400px;  
-    margin: 5px;
-
-    background-size: cover;
-    /*makes it so the background image doesn't repeat*/
-    background-repeat: no-repeat;
-    /*centers the background image*/
-    background-position: center;
-    /*saturates the background image*/
-    
-}
-
-td a{
-    width: 100%;
-    height: 100%;
-}
 
 footer{  
     background-color: darkslategrey; 
@@ -154,39 +135,90 @@ footer > p > a{
     padding-top: 20px;
     font-size: large;
 }
+
 /*------------SIP/Portfolio PAGE---------------*/
-/*Specifies by ID which Table Data we're styling*/
+/*styles for the whole portfolio section*/
+#Portfolio{
+    color:ghostwhite;
+    background-color: black;
+    border: 10px maroon inset;
+    margin:2%;
+    padding: 2%;
+}
+
+/*For the rows holding the web displays*/
+#CR{
+    /*changes the diplay type to flex*/
+    display: flex;
+    /*gives the section a leftside margin*/
+    margin-left: 5%;
+    /*gives the section a rightside margin*/
+    margin-right: 5%;
+}
+/*Styles for the website displays inside the portfolio*/
+.WebDisplay{
+    color:ghostwhite;
+    font-size: 200%;
+    height: 400px; 
+    margin: 2px;
+    background-size: cover;
+    /*centers the background image*/
+    background-position: center;
+    /*saturates the background image*/
+    flex:1;
+    filter: saturate(35%);
+    transition: .5s;
+}
+
+.WebDisplay h2{
+    background-color: rgba(0, 0, 0, 0.473);
+    padding-bottom: 10px;
+    position:relative;
+    top: 80%;
+    transition: .5s;
+
+}
+
+.WebDisplay:hover {
+    filter: saturate(100%);
+    padding-bottom: 20px;
+    border: 5px maroon outset;
+}
+.WebDisplay:hover > h2{
+    top: 70%;
+    padding-bottom: 50px;
+}
+
+/*ID for the Countdown web display*/
 #CountDown{
-    /*Give the table data a background image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Blast-Off-Reprise/main/Blast%20off%20Counting.PNG");
-
-}
-/*Specifies by ID which Table Data we're styling*/
-#Casino{
-    /*Give the table data a background image*/
-    background-image: url("");
-
-}
-/*Specifies by ID which Table Data we're styling*/
-#Click{
-    /*Give the table data a background image*/
-    background-image: url("");
     
 }
-/*Specifies by ID which Table Data we're styling*/
+/*ID for the Casino web display*/
+#Casino{
+    /*Give the table data a background image*/
+    background-image: url("https://raw.githubusercontent.com/EverWand/Space-Casino/main/You%20Win.PNG");
+
+}
+/*ID for the Click Button web display*/
+#Click{
+    /*Give the table data a background image*/
+    background-image: url("https://raw.githubusercontent.com/EverWand/Event-driven-program/main/click%20the%20button%20Screenshot.PNG");
+}
+/*ID for the Pour Water web display*/
 #Pour{
     /*Give the table data a background image*/
-    background-image: url("");
+    background-image: url("https://raw.githubusercontent.com/EverWand/Theme-Noise-Assignment/main/intro%20snip.PNG");
 
 
 }
-/*Specifies by ID which Table Data we're styling*/
+/*ID for the Table Table web display*/
 #TTable{
     /*Give the table data a background image*/
-    background-image: url("");
+    background-image: url("https://raw.githubusercontent.com/EverWand/Tables-of-Tables/main/Table%20Table%20%20Snip.PNG");
   
 }
-/*Specifies by ID which Table Data we're styling*/
+/*ID for the RPG web display*/
 #RPG{
     /*Give the table data a background image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Web-Warrior/main/ShopSnippet.PNG");
