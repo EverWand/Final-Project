@@ -1,46 +1,72 @@
+<!--Specified that this is an html Document-->
 <!DOCTYPE html>
 
-
+<!--beginning of the html document-->
 <html>
+    <!--Start of the Head Section-->
     <head>
+        <!--Links the correct .css style sheet file to the html document-->
         <link rel="stylesheet" href="styles.css">
-        <title>Test Test Test</title>
+         <!--Creates the title for the webpage-->
+        <title>Home</title>
     </head>
-
+    <!--Start of the Body Section-->
     <body>
-
+        <!--Container that displays the Navigation Menu-->
         <div id="NavMenu">
-            <img class="HomeLogo" src="UAT_logo.png">
+            <!--puts in an image of the UAT Logo-->
+            <img class="NavLogo" src="UAT_logo.png">
+            <!--Container the hold the Navigation Menu Anchors-->
             <div id="NavA">
+                <!--Home Page Anchor-->
                 <a href="index.html"><h2>Home</h2></a>
+                <!--Vertical line-->
                 <div class="vl"></div>
+                <!--Space Data Page Anchor-->
                 <a href="UATSPACE.html"><h2>UAT Space</h2></a>
+                 <!--Vertical line-->
                 <div class="vl"></div>
+                <!--Objective Page Anchor-->
                 <a href="BOARDOBJ.html"><h2>Boards Objectives</h2></a>
+                 <!--Vertical line-->
                 <div class="vl"></div>
+                <!--SIP Page Anchor-->
                 <a href="SIP.html"><h2>SIP</h2></a>
             </div>
         </div>
 
+        <!--Container that makes the page's Header-->
         <div id="Header">
+            <!--adds a line across the section-->
             <hr>
+            <!--Header Text-->
             <h1>Home Page</h1>
+            <!--Header Sub-text-->
             <h3>Thank you for stopping by!</h3>
+            <!--adds a line across the section-->
             <hr>
         </div>
         
+        <!--Container that holds the main content for the page-->
         <div id="Content">
-           <!-- Image of me -->
+           <!-- container that holds the the Information about myself --> 
            <div id="Self" style="display:flex">
+                <!--Image of me-->
                 <div id="SelfImg" style="flex: 1;">
+                    <!--text to display my name-->
                     <h1>Lucas Foxworthy</h1>
                 </div>
-            
+                <!--Cantainer with the information of me-->
                 <div id= "selfInfo" style="flex: 3;">
+                    <!--largest header to give context that the infroamtion is about what Major im taking-->
                     <h1>MAJOR</h1>
+                    <!--creates a line through the section-->
                     <hr>
+                    <!--Header text saying what major im taking-->
                     <h2> Advancing Computer Science </h2>
+                    <!--container for my email information-->
                     <div id="mailBox">
+                        <!--Header text that gives my Email and can have user send me emails-->
                         <h2>Email: <a href="mailto: lucfoxwo@uat.edu">lucfoxwo@uat.edu</a></h2>
                     </div>
                 </div>
@@ -49,13 +75,19 @@
         </div>
         
     </body>
-
+    <!--Start of the Page's footer section-->
     <footer>
+        <!--text for page credits-->
         <p>Page created by Lucas Foxworthy</p>
+        <!--text and anchor that sends to an email-->
         <p>Email: <a href="mailto: lucfoxwo@uat.edu">lucfoxwo@uat.edu</a></p>
+        <!--makes a line across the section-->
         <hr>
+        <!--text for the School's name-->
         <h4>University of Advancing Technology</h4>
+        <!--Creates an image of the UAT Logo that sends to UAT's own webpage-->
         <a href="https://www.uat.edu/"><img class="NavLogo" src="UAT_logo.png"></a>
+        <!--Text displaying the School's Adress-->
         <p>Address: 2625 W Baseline Rd, Tempe, AZ 85283</p>
     </footer>
 

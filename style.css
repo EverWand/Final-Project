@@ -1,87 +1,139 @@
-.table2 { 
+/*styles for the 2nd table section*/
+.table2 {
+    /*makes the section's background a gradient*/
     background-image: linear-gradient(white, lightblue);
+    /*changes the font of this section*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*styles for any section labeled as a button*/
 .button {
+    /*changes the background's color*/
     background-color: white;
+    /*creates a border and gives it a color*/
     border-color: lightblue;
+    /*gives the border a radius*/
     border-radius: 12px;
+    /*gives the section a width*/
     width: 100px;
+    /*gives the section a height*/
     height: 30px;
 }
 
+/*styles for the 3rd table section*/
 .table3 {
+    /*makes the background a gradient*/
     background-image: linear-gradient(white, lightblue);
+    /*gives the section a width*/
     width: 70%;
+    /*changes the font of the section*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*styles for the body section*/
 body {
+/*changes the background's color*/
   background-color: #f5f5f5;
+  /*makes the section's background a gradient*/
   background-image: linear-gradient(90deg, #f5f5f5 0%, #2eacd4 100%);
+  /*aligns the text to the center of this section*/
   text-align: center;
+  /*sets the body's margin to 0*/
   margin:0;
 }
 
+/*Styles for the whole navigation menu*/
 #NavMenu{
+    /*Changes the color of the section's background*/
     background-color: maroon;
+    /*Changes the color of the text in this section*/
     color: ghostwhite;
-    margin-top: 0px;
+    /*Changes the display type of the section*/
     display: flex;
 }
 
+/*styles targeting the header 2 tags found after anchor tags founf inside Navigation Menu*/
+#NavMenu > a > h2{
+    /*gives the section padding*/
+    padding: 5px;
+    /*gives the section a margin*/
+    margin: top 20px left 20px;
+
+}
+/*Styles for the UAT logo inside the Navigation menu*/
+.NavLogo{
+    /*Adjusts the height of the section*/
+    height: 80px;
+    /*Adjusts the width of the section*/
+    width: 80px;
+}
+
+/*Styles for the Navigation Anchors Section*/
 #NavA{
+    /*Changes the color of the section's background*/
     background-color: rgba(168, 90, 90, 0.582);
-    
-    margin-left: 5px;
-    margin-top: .2%;
-    margin-bottom: .2%;
+    /*gives the section a margin*/
+    margin: left 5px top .2% bottom.2% ;
+    /*Changes the display type of the section*/
     display: flex;
+    /*createsa border for this section*/
     border: 4px brown inset;
     
 }
 
+/*Styles for the anchor tags founf inside the Navigation Anchors section*/
 #NavA > a{
+    /*Adjusts the width pf the section*/
     width: 200px;
+    /*Changes the color of the text in this section*/
     color: ghostwhite;
+    /*gives the section padding*/
     padding: left 2px right 2px;
 }
 
+/*Styles for when the mouse is hovered over anchor tags found inside the NAvigation Anchors section*/
 #NavA > a:hover{
+    /*Changes the color of the section's background*/
     background-color: rgb(185, 131, 131);
 }
 
-#NavMenu > a > h2{
-    padding: 5px;
-    margin-top: 20px;
-    margin-left:20px;
-}
-
+/*Targets the divs inside the Navigation Anchors section that are meant to be vertical lines*/
 #NavA > .vl {
+    /*gives the section a top margin*/
     margin-top: 1%;
+    /*Adjusts the width of the section*/
     width: 3px;
+    /*Adjusts the height of the section*/
     height: 50px;
+    /*Changes the color of the section's background*/
     background-color: maroon;
 }
 
-.HomeLogo{
-    height: 80px;
-    width: 80px;
-}
 
+
+/*________Footer Section___________*/
+
+/*styles for the footer section*/
 footer{  
-    background-color: darkslategrey; 
+    /*Changes the color of the section's background*/
+    background-color: darkslategrey;
+    /*Changes the color of the text in this section*/ 
     color:ghostwhite;
+    /*gives the section a top margin*/
     margin-top: 10%;
-    
+    /*gives the section top padding*/
     padding-top:5px;
 }
 
+/*Styles that target images that take place after anchor tags inside the footer*/
 footer > a > img{
+    /*Adjusts the width of the section*/
     width: 120px;
+    /*Adjusts the height of the section*/
     height: 120px;   
 }
 
+/*Styles that target the anchor that take place after paragraph tags inside the footer*/
 footer > p > a{
+    /*Changes the color of the text in this section*/
     color: lightblue;   
 }

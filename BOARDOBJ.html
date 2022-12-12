@@ -1,47 +1,79 @@
+<!--Specified that this is an html Document-->
 <!DOCTYPE html>
 
+<!--beginning of the html document-->
 <html>
+    <!--Start of the Head Section-->
     <head>
+        <!--Links the correct .css style sheet file to the html document-->
         <link rel="stylesheet" href="styles.css">
+        <!--links the .js file to this page for the table hovering-->
         <script src="script.js"></script>
-        <title>Test Test Test</title>
+        <!--Creates the title for the webpage-->
+        <title>Objectives</title>
     </head>
-
+    <!--Start of the Body Section-->
     <body>
-
+        <!--Container that displays the Navigation Menu-->
         <div id="NavMenu">
-            <img class="HomeLogo" src="UAT_logo.png">
+            <!--puts in an image of the UAT Logo-->
+            <img class="NavLogo" src="UAT_logo.png">
+            <!--Container the hold the Navigation Menu Anchors-->
             <div id="NavA">
+                <!--Home Page Anchor-->
                 <a href="index.html"><h2>Home</h2></a>
+                <!--Vertical line-->
                 <div class="vl"></div>
+                <!--Space Data Page Anchor-->
                 <a href="UATSPACE.html"><h2>UAT Space</h2></a>
+                 <!--Vertical line-->
                 <div class="vl"></div>
+                <!--Objective Page Anchor-->
                 <a href="BOARDOBJ.html"><h2>Boards Objectives</h2></a>
+                 <!--Vertical line-->
                 <div class="vl"></div>
+                <!--SIP Page Anchor-->
                 <a href="SIP.html"><h2>SIP</h2></a>
             </div>
         </div>
 
+        <!--Container that makes the page's Header-->
         <div id="Header">
+            <!--adds a line across the section-->
             <hr>
+            <!--Header Text-->
             <h1>Board Objectives</h1>
+            <!--adds a line across the section-->
             <hr>
         </div>
         
+         <!--Container that holds the main content for the page-->
         <div id="Content">
+            <!--largest Header saying what program the objectives are related to-->
             <h1>UAT Computer Science Program</h1>
+            <!--second largest header to tell what the table is about-->
             <h2>- Objectives -</h2>
+            <!--Container holding the objectives table-->
             <div id= "ObjEnv">
+                <!--Table that displays the different objectives of the UAT computer science program-->
                 <table style="display: flex;">
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(1)" onmouseleave="defaultObjTxt()"><h2>1</h2></td>
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(2)" onmouseleave="defaultObjTxt()"><h2>2</h2></td>
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(3)" onmouseleave="defaultObjTxt()"><h2>3</h2></td>
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(4)" onmouseleave="defaultObjTxt()"><h2>4</h2></td>
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(5)" onmouseleave="defaultObjTxt()"><h2>5</h2></td>
+                    <!--Table data displaying that labels the objectives -->
                     <td class="ObjTab" onmouseover="ObjSwap(6)" onmouseleave="defaultObjTxt()"><h2>6</h2></td>
                 </table>
 
+                <!--container that holds the Objective text-->
                 <div id="ObjDisplay">
+                    <!--Displays the objective text, changes based on which table data is hovered, defaults to instructions-->
                     <h3 id="ObjTxt">Hover over the tabs to see each objective.</h3>
                 </div>
             </div>       
@@ -50,12 +82,19 @@
         
     </body>
 
+    <!--Start of the Page's footer section-->
     <footer>
+        <!--text for page credits-->
         <p>Page created by Lucas Foxworthy</p>
+        <!--text and anchor that sends to an email-->
         <p>Email: <a href="mailto: lucfoxwo@uat.edu">lucfoxwo@uat.edu</a></p>
+        <!--makes a line across the section-->
         <hr>
+        <!--text for the School's name-->
         <h4>University of Advancing Technology</h4>
+        <!--Creates an image of the UAT Logo that sends to UAT's own webpage-->
         <a href="https://www.uat.edu/"><img class="NavLogo" src="UAT_logo.png"></a>
+        <!--Text displaying the School's Adress-->
         <p>Address: 2625 W Baseline Rd, Tempe, AZ 85283</p>
     </footer>
 

@@ -1,148 +1,259 @@
 /*===================GENERAL STYLES=========================*/
+/*Styles for the Body section*/
 body{
+    /*Realigns the text inside this section*/
     text-align: center;
+    /*Changes the color of the section's background*/
     background-color: rgba(63, 107, 107, 0.329);
+    /*gives the section a margin [gets rid of body's margin]*/
     margin:0;
 }
 
-
+/*Styles for any tables found in documents*/
 table{
+    /*createsa border for this section*/
     border:5px maroon inset;
-    margin: auto;
+    /*gives the section padding*/
     padding: 20px;
 }
 
+/*________Footer Section___________*/
 
+/*styles for the footer section*/
 footer{  
-    background-color: darkslategrey; 
+    /*Changes the color of the section's background*/
+    background-color: darkslategrey;
+    /*Changes the color of the text in this section*/ 
     color:ghostwhite;
+    /*gives the section a top margin*/
     margin-top: 10%;
-    
+    /*gives the section top padding*/
     padding-top:5px;
 }
 
+/*Styles that target images that take place after anchor tags inside the footer*/
 footer > a > img{
+    /*Adjusts the width of the section*/
     width: 120px;
+    /*Adjusts the height of the section*/
     height: 120px;   
 }
 
+/*Styles that target the anchor that take place after paragraph tags inside the footer*/
 footer > p > a{
+    /*Changes the color of the text in this section*/
     color: lightblue;   
 }
 
-/*===================ID STYLES=========================*/
+/*styles for the main content section*/
+#Content{
+    /*Adjusts the width of the section*/
+    width: 100%;
+    /*Adjusts the height of the section*/
+    height: 40%;
+    /*createsa border for this section*/
+    border: 3px grey solid;
+    /*Changes the color of the section's background*/
+    background-color: ghostwhite;
+    /*Realigns the text inside this section*/
+    text-align: center;
+    /*gives the section bottom padding*/
+    padding-bottom: 20px;
+}
 
+/*===================NAVIGATION MENU=========================*/
+
+/*Styles for the whole navigation menu*/
 #NavMenu{
+    /*Changes the color of the section's background*/
     background-color: maroon;
+    /*Changes the color of the text in this section*/
     color: ghostwhite;
-    margin-top: 0px;
+    /*Changes the display type of the section*/
     display: flex;
 }
 
+/*styles targeting the header 2 tags found after anchor tags founf inside Navigation Menu*/
+#NavMenu > a > h2{
+    /*gives the section padding*/
+    padding: 5px;
+    /*gives the section a margin*/
+    margin: top 20px left 20px;
+
+}
+/*Styles for the UAT logo inside the Navigation menu*/
+.NavLogo{
+    /*Adjusts the height of the section*/
+    height: 80px;
+    /*Adjusts the width of the section*/
+    width: 80px;
+}
+
+/*Styles for the Navigation Anchors Section*/
 #NavA{
+    /*Changes the color of the section's background*/
     background-color: rgba(168, 90, 90, 0.582);
-    
-    margin-left: 5px;
-    margin-top: .2%;
-    margin-bottom: .2%;
+    /*gives the section a margin*/
+    margin: left 5px top .2% bottom.2% ;
+    /*Changes the display type of the section*/
     display: flex;
+    /*createsa border for this section*/
     border: 4px brown inset;
     
 }
 
+/*Styles for the anchor tags founf inside the Navigation Anchors section*/
 #NavA > a{
+    /*Adjusts the width pf the section*/
     width: 200px;
+    /*Changes the color of the text in this section*/
     color: ghostwhite;
+    /*gives the section padding*/
     padding: left 2px right 2px;
 }
 
+/*Styles for when the mouse is hovered over anchor tags found inside the NAvigation Anchors section*/
 #NavA > a:hover{
+    /*Changes the color of the section's background*/
     background-color: rgb(185, 131, 131);
 }
 
-#NavMenu > a > h2{
-    padding: 5px;
-    margin-top: 20px;
-    margin-left:20px;
-}
-
+/*Targets the divs inside the Navigation Anchors section that are meant to be vertical lines*/
 #NavA > .vl {
+    /*gives the section a top margin*/
     margin-top: 1%;
+    /*Adjusts the width of the section*/
     width: 3px;
+    /*Adjusts the height of the section*/
     height: 50px;
+    /*Changes the color of the section's background*/
     background-color: maroon;
 }
 
-
-#Content{
-    width: 100%;
-    height: 40%;
-    border: 3px grey solid;
-    background-color: ghostwhite;
-    text-align: center;
-    padding-bottom: 20px;
-}
-/*------------HOME PAGE---------------*/
+/*===================HOME STYLES=========================*/
+/*styles for the image of myself*/
 #SelfImg{
+    /*changes the how the section is positioned*/
     position:relative;
+    /*makes the background of this sectiopn into an image*/
     background-image: url("fancy me.png");
-    background-repeat: no-repeat;
+    /*changes the size of the background to cover the section*/
     background-size: cover;
+    /*gives the section a top margin*/
     margin-top: 20px;
+    /*gives the section a left margin*/
     margin-left: 10%;
+    /*Adjusts the width of the section*/
     width: 400px;
+    /*Adjusts the height of the section*/
     height: 500px;
+    /*createsa border for this section*/
     border: 5px maroon inset;
 }
 
+/*styles for the heade 1 text inside the container with the image of myself*/
 #SelfImg h1 {
+    /*changes the how the section is positioned*/
     position:absolute;
+    /*adjusts the bottom position of this section*/
     bottom:0px;
+    /*adjusts the right position of this section*/
     right: 5px;
+    /*Changes the color of the text in this section*/
     color:ghostwhite;
+    /*gives text an outline around it*/
     -webkit-text-stroke: 1px rgb(133, 115, 13);
+    /*changes the font size in this section*/
     font-size: 40px;
+    /*Changes how bold the text is for this section*/
     font-weight:bolder;
 }
 
+/*Styles for the container holding my information*/
 #selfInfo{
+    /*changes the how the section is positioned*/
     position:relative;
+    /*gives the section padding*/
     padding: 5%;
 }
 
+/*Styles for the container that displays the Email information on the home page*/
 #mailBox{
+    /*changes the how the section is positioned*/
     position: absolute;
+    /*adjusts the bottom position of this section*/
     bottom: 0;
+    /*adjusts the left position of this section*/
     left: 35%;
+    /*createsa border for this section*/
     border: 5px maroon solid;
-    padding-left: 5%;
+    /*gives the section  left padding*/
+    padding-left: 5%; 
+    /*gives the section right padding*/
     padding-right: 5%;
 }
 
-/*------------Objective PAGE---------------*/
+/*===================OBJECTIVES STYLES=========================*/
+/*Styles for the Container holding the Objective Content*/
 #ObjEnv{
+    /*gives the section padding*/
     padding: 10px;
+    /*gives the section a margin*/
     margin: auto;
+    /*Adjusts the width of the section*/
     width: 50%;
+    /*createsa border for this section*/
     border: 5px maroon solid;
+    /*Changes the color of the section's background*/
     background-color: lightgrey;
 }
-
+/*Styles for the Objective display*/
 #ObjDisplay{
+    /*Adjusts the height of the section*/
     height: 100px;
+    /*createsa border for this section*/
     border: 3px maroon inset;
+    /*Changes the color of the section's background*/
     background-color: ghostwhite;
+    /*gives the section top padding*/
     padding-top: 20px;
+    /*changes the font size in this section*/
     font-size: large;
+}
+
+/*Styles for the tabs for the objective display*/
+.ObjTab{
+    /*Adjusts the height of the section*/
+    height:20px;
+    /*Adjusts the width of the section*/
+    width:200px;
+    /*createsa border for this section*/
+    border: 3px maroon inset;
+    /*Adds transition to any changes made to the style of this section*/
+    transition: .5s ease-in-out;
+    /*Changes the color of the section's background*/
+    background-color: rgb(180, 180, 180);
+    
+}
+
+/*style for when the objective tabs are hovered over*/
+.ObjTab:hover{
+    /*Changes the color of the section's background*/
+    background-color: ghostwhite;
 }
 
 /*------------SIP/Portfolio PAGE---------------*/
 /*styles for the whole portfolio section*/
 #Portfolio{
+    /*Changes the color of the text in this section*/
     color:ghostwhite;
+    /*Changes the color of the section's background*/
     background-color: black;
+    /*creates a border for this section*/
     border: 10px maroon inset;
+    /*gives the section a margin*/
     margin:2%;
+    /*gives the section padding*/
     padding: 2%;
 }
 
@@ -150,111 +261,98 @@ footer > p > a{
 #CR{
     /*changes the diplay type to flex*/
     display: flex;
-    /*gives the section a leftside margin*/
-    margin-left: 5%;
-    /*gives the section a rightside margin*/
-    margin-right: 5%;
+    /*gives the section a margin*/
+    margin: left 5% right 5%;
+
 }
 /*Styles for the website displays inside the portfolio*/
 .WebDisplay{
+    /*Changes the color of the text in this section*/
     color:ghostwhite;
+    /*changes the font size in this section*/
     font-size: 200%;
+    /*Adjusts the height of the section*/
     height: 400px; 
+    /*gives the section a margin*/
     margin: 2px;
+    /*changes the size of the background to cover the section*/
     background-size: cover;
     /*centers the background image*/
     background-position: center;
     /*saturates the background image*/
     flex:1;
+    /*Adds a filter on the section*/
     filter: saturate(35%);
+    /*Adds transition to any changes made to the style of this section*/
     transition: .5s;
 }
 
+/*styles for the header 2 tags inside this the website display container*/
 .WebDisplay h2{
+    /*Changes the color of the section's background*/
     background-color: rgba(0, 0, 0, 0.473);
+    /*gives the section bottom padding*/
     padding-bottom: 10px;
+    /*changes the how the section is positioned*/
     position:relative;
+    /*adjusts the top position of this section*/
     top: 80%;
+    /*Adds transition to any changes made to the style of this section*/
     transition: .5s;
 
 }
 
+/*styles for when a website display is hovered over*/
 .WebDisplay:hover {
+    /*edits the filter on the section*/
     filter: saturate(100%);
+    /*gives the section bottom padding*/
     padding-bottom: 20px;
+    /*createsa border for this section*/
     border: 5px maroon outset;
 }
+
+/*styles for the header 2 tags found inside the Web dislay container when the mouse hoveres over a web display*/
 .WebDisplay:hover > h2{
+    /*adjusts the top position of this section*/
     top: 70%;
+    /*gives the section bottom padding*/
     padding-bottom: 50px;
 }
 
 /*ID for the Countdown web display*/
 #CountDown{
+    /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Blast-Off-Reprise/main/Blast%20off%20Counting.PNG");
     
 }
 /*ID for the Casino web display*/
 #Casino{
-    /*Give the table data a background image*/
+   /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Space-Casino/main/You%20Win.PNG");
 
 }
 /*ID for the Click Button web display*/
 #Click{
-    /*Give the table data a background image*/
+    /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Event-driven-program/main/click%20the%20button%20Screenshot.PNG");
 }
 /*ID for the Pour Water web display*/
 #Pour{
-    /*Give the table data a background image*/
+    /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Theme-Noise-Assignment/main/intro%20snip.PNG");
 
 
 }
 /*ID for the Table Table web display*/
 #TTable{
-    /*Give the table data a background image*/
+    /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Tables-of-Tables/main/Table%20Table%20%20Snip.PNG");
   
 }
 /*ID for the RPG web display*/
 #RPG{
-    /*Give the table data a background image*/
+    /*makes the section's background an image*/
     background-image: url("https://raw.githubusercontent.com/EverWand/Web-Warrior/main/ShopSnippet.PNG");
     
-}
-
-/*===================CLASS STYLES=========================*/
-
-.MainBtn{
-    width: 300px; 
-    height: 100px;
-    background-color: cadetblue;
-    color: ghostwhite;
-    border: 3px grey solid;
-    transition: .5s ease-in-out;
-}
-
-.MainBtn:hover{
-    background-color: rgb(72, 119, 121);
-    color: ghostwhite;
-}
-
-.ObjTab{
-    height:20px;
-    width:200px;
-    border: 3px maroon inset;
-    transition: .5s ease-in-out;
-    background-color: rgb(180, 180, 180);
-    
-}
-
-.ObjTab:hover{
-    background-color: ghostwhite;
-}
-
-.HomeLogo{
-    height: 80px;
-    width: 80px;
 }

@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" style="font-family:fantasy">
 
+<!--Container that makes the page's Header-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--Creates the title for the webpage-->
     <title>UAT Space Program</title>
+    <!--Links the correct .css style sheet file to the html document-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="code.js"></script>
     <script src="dataLoader.js"></script>
 </head>
 
+<!--Start of the Body Section-->
 <body>
+    <!--Container that displays the Navigation Menu-->
     <div id="NavMenu">
-        <img class="HomeLogo" src="UAT_logo.png">
+        <!--puts in an image of the UAT Logo-->
+        <img class="NavLogo" src="UAT_logo.png">
+        <!--Container the hold the Navigation Menu Anchors-->
         <div id="NavA">
+            <!--Home Page Anchor-->
             <a href="index.html"><h2>Home</h2></a>
+            <!--Vertical line-->
             <div class="vl"></div>
+            <!--Space Data Page Anchor-->
             <a href="UATSPACE.html"><h2>UAT Space</h2></a>
+             <!--Vertical line-->
             <div class="vl"></div>
+            <!--Objective Page Anchor-->
             <a href="BOARDOBJ.html"><h2>Boards Objectives</h2></a>
+             <!--Vertical line-->
             <div class="vl"></div>
+            <!--SIP Page Anchor-->
             <a href="SIP.html"><h2>SIP</h2></a>
         </div>
     </div>
@@ -29,7 +43,7 @@
         <table class="table1">
             <tr>
                 <td>
-                    <img src="image001B.png" />
+                    <img src="images/image001B.png" />
                 </td>
                 <td>
                     <h1>UAT Space Program</h1>
@@ -89,12 +103,19 @@
         </tbody>
     </table>
     
+    <!--Start of the Page's footer section-->
     <footer>
+        <!--text for page credits-->
         <p>Page created by Lucas Foxworthy</p>
+        <!--text and anchor that sends to an email-->
         <p>Email: <a href="mailto: lucfoxwo@uat.edu">lucfoxwo@uat.edu</a></p>
+        <!--makes a line across the section-->
         <hr>
+        <!--text for the School's name-->
         <h4>University of Advancing Technology</h4>
+        <!--Creates an image of the UAT Logo that sends to UAT's own webpage-->
         <a href="https://www.uat.edu/"><img class="NavLogo" src="UAT_logo.png"></a>
+        <!--Text displaying the School's Adress-->
         <p>Address: 2625 W Baseline Rd, Tempe, AZ 85283</p>
     </footer>
 </body>
